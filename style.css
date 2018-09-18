@@ -179,15 +179,15 @@ body {
 
 /* EDUCATION */
 .educ {
-	width: 90%;
 	height: 60vh;
+	display: block;
 }
 
 .row {
 	display: flex;
 	position: relative;
 	top: 70px;
-	margin-left: 20vw;
+	justify-content: center;
 }
 
 .row-item {
@@ -200,7 +200,7 @@ body {
 	position: relative;
 	padding-right: 15px;
     padding-left: 15px;
-    margin-left: 100px;
+    text-align: center;
     top: 70px;
    	letter-spacing: 5px;
 	font-family: 'Marck Script', cursive;
@@ -212,7 +212,7 @@ body {
 	font-weight: bold;
 	color: #272727;
 	text-align: center;
-	width: 310px;
+	/*width: 300px;*/
 }
 
 .educ-place {
@@ -378,7 +378,7 @@ body {
 
 /* MOBILE VIEW*/
 
-@media (max-width: 600px) {
+@media (max-width: 1279px) {
 	.navbar {
 		width: 100vw;
 		height: 30px;
@@ -399,19 +399,19 @@ body {
 	}
 
 	.name {
-		font-size: 2em;
+		font-size: 4em;
 	}
 
 	.first_name, .last_name {
-		top: 80%;
+		top: 67%;
 	}
 
 	.last_name {
-		left: 50%;
+		left: 45%;
 	}
 
 	.first_name {
-		left: 30%;
+		left: 25%;
 	}
 
 	#text {
@@ -443,16 +443,20 @@ body {
 	.row {
 		top: 50px;
 		flex-wrap: wrap;
-		margin-left: 25px;
+		margin-left: 15px;
 	}
 
 	.row-item {
-		width: 300px;
+		width: 290px;
 		margin: 15px;
 	}
 
 	.educ h1 {
 	    top: 50px;
+	}
+
+	.educ-header {
+		padding: 5px;
 	}
 
 	.portfolio {
@@ -479,5 +483,30 @@ body {
 		bottom: 200px;
 		font-size: 14px;
 	}
+
+}
+
+@media (max-width: 600px) {
+
+	.name {
+		font-size: 1.7em;
+	}
+
+	.first_name, .last_name {
+		top: 75%;
+	}
+
+	.last_name {
+		left: 50%;
+	}
+
+	.first_name {
+		left: 30%;
+	}
+
+	#text {
+		width: 45%;
+	}
+
 
 }
