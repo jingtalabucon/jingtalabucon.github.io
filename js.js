@@ -1,7 +1,5 @@
 // SMOOTH SCROLLING
-
-// let links = document.querySelectorAll('a[href^="#"]');
-let links = document.querySelectorAll('.navlink');
+let links = document.querySelectorAll('a[href^="#"]');
 
 for (let item of links) {
 	item.addEventListener('click', (e)=> {
@@ -15,16 +13,3 @@ for (let item of links) {
 		e.preventDefault();
 	})
 }
-
-let navbar = document.querySelector('nav');
-console.log(navbar);
-
-
-window.onscroll = function(){
-	console.log(window.pageYOffset || document.documentElement.scrollTop);
-
-}
-
-
-
- // return window.pageYOffset || document.documentElement.scrollTop;
